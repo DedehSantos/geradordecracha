@@ -1,0 +1,27 @@
+.centralizar_saida{
+
+
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h3{
+    background-color: red;
+}
+
+h1{
+    background-color: green;
+}
+
+
+.logo_central{
+    width: 300px;
+    align-self: center;
+}

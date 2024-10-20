@@ -1,0 +1,4 @@
+<!-- // data da última atualização 19/10/2004 \\ -->
+
+foi corrigido a contagem dos alunos esta contanto agora a entrada
+atrasados e saidasa corrigido tambem a parte de colocar faltantes no banco de dados apartir das 17:00
