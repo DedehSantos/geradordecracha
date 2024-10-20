@@ -21,7 +21,7 @@
     <div class="dropdown-menu">
      
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="botoes.php" target="_blank">TURMAS</a>
+      <a class="dropdown-item" href="./pages/todoscracha.php" target="_blank">todos cracha</a>
       <div class="dropdown-divider"></div>
       
     </div>
@@ -32,7 +32,7 @@
   <div class="geral">
   <h1>Gerador de Cracha</h1>
     <div class="botoes">
-      <form action="./pages/buscarcracha.php" method="GET">
+      <form action="./pages/buscarcracha.php" method="GET" target="_blank">
         <div class="form-group">
           <input id="busca" type="number" class="form-control" placeholder="digite a matricula" autofocus required name="busca">
         </div>

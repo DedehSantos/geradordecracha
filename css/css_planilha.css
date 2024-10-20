@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+
+.container{
+
+    width: 50%;
+  
+}
+
+form{
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+}
+
+.form-group{
+    width: 30%;
+    text-align: center;
+}
