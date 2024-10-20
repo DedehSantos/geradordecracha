@@ -1,0 +1,88 @@
+.centralizarcracha {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%; /* Use uma largura mais flexível para se ajustar a qualquer tela */
+    max-width: 600px; /* Limita a largura máxima em telas grandes */
+    align-items: center; /* Centraliza os itens */
+    margin-top: 5vh; /* Usa viewport height para espaçamento */
+    position: relative; /* Define posição relativa para os elementos internos */
+}
+
+.dados_aluno {
+    position: absolute; /* Posiciona a div sobre a imagem */
+    top: 5%; /* Ajusta a posição da div em relação à imagem */
+    left: 44%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    text-align: start; /* Alinha o texto no centro */
+}
+
+#nome_do_aluno, #matricula_do_aluno, #turma_do_aluno {
+    padding-bottom: 5px;
+    font-size: 1.rem; /* Usa uma fonte responsiva */
+    color: #000; /* Ajusta a cor do texto */
+}
+
+#cracha {
+    width: 100%; /* Faz a imagem se ajustar ao tamanho do container */
+    max-width: 400px; /* Define uma largura máxima */
+    height: auto;
+    align-self: center;
+}
+
+#botao {
+    margin-top: 2vh;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem; /* Tamanho da fonte flexível */
+}
+
+#imagem_do_codigo {
+    width: 35%; /* Ajusta a largura para ser mais flexível */
+    position: absolute;
+    top: 15%; /* Ajusta a posição vertical */
+    left: 30%; /* Ajusta a posição horizontal */
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .centralizarcracha {
+        width: 95%;
+        margin-top: 3vh;
+    }
+
+    .dados_aluno {
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #cracha {
+        max-width: 300px;
+    }
+
+    #imagem_do_codigo {
+        width: 5%;
+        top: 5%;
+        left: 25%;
+    }
+
+    #botao {
+        width: 100px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media print {
+    @page {
+        size: A4; /* Define o tamanho da página para A4 */
+        margin: 0; /* Remove margens padrão */
+    }
+
+    /* Esconda elementos que não devem ser impressos */
+    #botao {
+        display: none; /* Esconde o botão de impressão na impressão */
+    }
+}

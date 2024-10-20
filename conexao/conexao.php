@@ -4,7 +4,7 @@ $servidor = "localhost";
 $dbusuario = "root";
 $dbsenha = "";
 //inserir o nome do banco de dados
-$dbname = "sistemafrequencia";
+$dbname = "geradordecracha";
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_set_charset($conn,  'utf8');
 if ($conn) {
